@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# 🔔 React Notification System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple, elegant notification system built with **React Context API** and **useReducer**. This project demonstrates how to manage global notifications (success & error) without any external library.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- ✅ Global notification management using Context API
+- ✅ Smooth auto-dismiss after 3 seconds
+- ✅ Success & error types with distinct styles
+- ✅ Minimal and clean codebase
+- ✅ Fully customizable
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Tech Stack
 
-### `npm test`
+- React
+- Context API
+- useReducer
+- JavaScript (ES6+)
+- CSS-in-JS styling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the Repo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/yourusername/react-notifications.git
+cd react-notifications
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install Dependencies
 
-### `npm run eject`
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Run Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app will open at http://localhost:3000
+🧠 Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+src/
+│
+├── App.js                  # Root component with Provider
+├── NotificationContext.js  # Global notification state manager
+├── Notification.js         # UI for showing notifications
+└── TriggerButton.js        # Buttons to show notifications
 
-## Learn More
+## 🖼️ Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Success Notification | Error Notification |
+|----------------------|--------------------|
+| ![Success](./screenshot-success.png) | ![Error](./screenshot-error.png) |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+🛠️ Customize
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Want to customize colors, duration, or animations?
+Modify the styles inside Notification.js:
 
-### Analyzing the Bundle Size
+backgroundColor: state.type === 'error' ? '#f87171' : '#34d399'
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+📄 License
 
-### Making a Progressive Web App
+This project is open-source and available under the MIT License.
+💡 Inspiration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built to demonstrate how powerful and clean React Context + Reducer can be for small-to-medium global state needs like notifications.
