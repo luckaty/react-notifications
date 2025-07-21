@@ -28,7 +28,6 @@ A simple, elegant notification system built with **React Context API** and **use
 
 ### 1. Clone the Repo
 
-```bash
 git clone https://github.com/yourusername/react-notifications.git
 cd react-notifications
 
